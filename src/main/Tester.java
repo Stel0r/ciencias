@@ -1,4 +1,6 @@
-package arboles;
+package main;
+
+import arboles.NodoBinario;
 
 public class Tester {
 
