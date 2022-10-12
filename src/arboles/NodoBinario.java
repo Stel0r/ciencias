@@ -1,6 +1,6 @@
 package arboles;
 
-public class NodoBinario <T extends Comparable> extends Nodo {
+public class NodoBinario <T> extends Nodo {
 	
 	public NodoBinario(T dato) {
 		super(dato);

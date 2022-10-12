@@ -7,7 +7,7 @@ public class NodoOrdenamientoB <T extends Comparable> extends NodoBinario {
 	}
 	
 	public void agregarNodo(NodoOrdenamientoB<T> nodo) {
-		if(nodo.getDato().compareTo(this.getDato())>0) {
+		if(((Comparable) nodo.dato).compareTo(this.dato)>0) {
 			if(this.getNodosHijos().get(1)!=null) {
 				((NodoOrdenamientoB) this.getNodosHijos().get(1)).agregarNodo(nodo);
 			}else {
