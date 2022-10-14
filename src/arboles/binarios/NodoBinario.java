@@ -1,4 +1,6 @@
-package arboles;
+package arboles.binarios;
+
+import arboles.Nodo;
 
 public class NodoBinario <T> extends Nodo {
 	
@@ -21,6 +23,17 @@ public class NodoBinario <T> extends Nodo {
 	@Override
 	public String toString() {
 		return dato.toString();
+	}
+
+
+
+	public void recorridoInOrder() {
+		if(nodosHijos.get(0)!=null)
+			((NodoBinario) nodosHijos.get(0)).recorridoInOrder();
+		System.out.println(this);
+		if(nodosHijos.get(1)!=null)
+			((NodoBinario) nodosHijos.get(1)).recorridoInOrder();
+		
 	}
 
 }
