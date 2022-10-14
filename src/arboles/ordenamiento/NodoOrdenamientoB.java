@@ -1,4 +1,6 @@
-package arboles;
+package arboles.ordenamiento;
+
+import arboles.binarios.NodoBinario;
 
 public class NodoOrdenamientoB <T extends Comparable> extends NodoBinario {
 
