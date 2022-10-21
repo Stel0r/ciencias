@@ -2,7 +2,9 @@ package arboles;
 
 import java.util.ArrayList;
 
-public class Nodo <T>{
+import arboles.ordenamiento.NodoOrdenamientoB;
+
+public abstract class Nodo <T>{
 	
 	protected T dato;
 	protected ArrayList<Nodo<T>> nodosHijos;
@@ -42,5 +44,8 @@ public class Nodo <T>{
 	public void setNodosHijos(ArrayList<Nodo<T>> nodosHijos) {
 		this.nodosHijos = nodosHijos;
 	}
+	
+	public abstract void agregarNodo(Nodo<T> nodo);
+
 
 }

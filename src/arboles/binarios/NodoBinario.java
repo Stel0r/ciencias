@@ -2,7 +2,7 @@ package arboles.binarios;
 
 import arboles.Nodo;
 
-public class NodoBinario <T> extends Nodo {
+public abstract class NodoBinario <T> extends Nodo {
 	
 	public NodoBinario(T dato) {
 		super(dato);
@@ -44,5 +44,11 @@ public class NodoBinario <T> extends Nodo {
             }
             System.out.println(this.toString());
         }
+
+
+
+		
+
+
 
 }

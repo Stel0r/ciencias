@@ -14,6 +14,8 @@ public abstract class Arbol <T>{
     public abstract void agregarNodo(T dato);
     
     public abstract void agregarNodo(Nodo<T> nodo);
+    
+    public abstract void eliminarNodo(Nodo<T> nodo);
 
     /**
      * @return the raiz

@@ -1,5 +1,6 @@
 package arboles.ordenamiento;
 
+import arboles.Nodo;
 import arboles.binarios.NodoBinario;
 
 public class NodoOrdenamientoB <T extends Comparable> extends NodoBinario {
@@ -8,8 +9,9 @@ public class NodoOrdenamientoB <T extends Comparable> extends NodoBinario {
 		super(dato);
 	}
 	
-	public void agregarNodo(NodoOrdenamientoB<T> nodo) {
-		if(((Comparable) nodo.dato).compareTo(this.dato)>0) {
+	@Override
+	public void agregarNodo(Nodo nodo) {
+		if(((Comparable) nodo.getDato()).compareTo(this.dato)>0) {
 			if(this.getNodosHijos().get(1)!=null) {
 				((NodoOrdenamientoB) this.getNodosHijos().get(1)).agregarNodo(nodo);
 			}else {
