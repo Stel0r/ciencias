@@ -1,11 +1,13 @@
 package main;
 
+import arboles.Nodo;
+import arboles.ordenamiento.ArbolOrdenamientoB;
 import arboles.ordenamiento.NodoOrdenamientoB;
 
 public class Tester {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/*
 		NodoOrdenamientoB<Edificio> a = new NodoOrdenamientoB<Edificio>(new Edificio(10, 50.5, 1 ));
 		NodoOrdenamientoB<Edificio> b = new NodoOrdenamientoB<Edificio>(new Edificio(15, 50.5, 1 ));
 		NodoOrdenamientoB<Edificio> c = new NodoOrdenamientoB<Edificio>(new Edificio(13, 50.5, 1 ));
@@ -15,8 +17,20 @@ public class Tester {
                 NodoOrdenamientoB<Integer> n1 = new NodoOrdenamientoB<>(80);
                 n1.agregarNodo(new NodoOrdenamientoB<>(20));
                 n1.agregarNodo(new NodoOrdenamientoB<>(150));
-                n1.agregarNodo(new NodoOrdenamientoB<>(120));
-                System.out.println(((NodoOrdenamientoB)n1.getNodosHijos().get(1)).getNodosHijos().get(1));
+                n1.agregarNodo(new NodoOrdenamientoB<>(120));*/
+                ArbolOrdenamientoB<Integer> abi = new ArbolOrdenamientoB<>();
+                abi.agregarNodo(20);
+                abi.agregarNodo(150);
+                abi.agregarNodo(120);
+                abi.agregarNodo(-10);
+                abi.agregarNodo(0);
+                abi.agregarNodo(15);
+                abi.agregarNodo(5);
+                abi.agregarNodo(9);
+                
+                abi.eliminarNodo(abi.buscar(20));
+                abi.recorridoInfijo();
+                System.out.println(abi.getRaiz());
 	}
 
 }
