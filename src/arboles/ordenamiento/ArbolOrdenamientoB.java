@@ -53,6 +53,7 @@ public class ArbolOrdenamientoB<T extends Comparable> extends ArbolBinario<T> {
         Nodo candidato = nodo.getNodosHijos().get(0);
         if (candidato == null) {
             candidato = nodo.getNodosHijos().get(1);
+            //existe un caso nulo cuando el nodo a eliminar es una hoja
             candidato.setPadre(nodo.getPadre());
             if (candidato.getPadre() != null) {
                 candidato.getPadre().getNodosHijos().set(candidato.getPadre().getNodosHijos().indexOf(nodo), candidato);
@@ -77,6 +78,7 @@ public class ArbolOrdenamientoB<T extends Comparable> extends ArbolBinario<T> {
         }else{
             this.setRaiz(candidato);
         }
+        //buscar el nodo dentro de la lista del arbol
     }
 
 }
