@@ -3,7 +3,7 @@ package arboles.ordenamiento;
 import arboles.Nodo;
 import arboles.binarios.NodoBinario;
 
-public class NodoOrdenamientoB <T extends Comparable> extends NodoBinario {
+public class NodoOrdenamientoB <T extends Comparable> extends NodoBinario<T> {
 
 	public NodoOrdenamientoB(T dato) {
 		super(dato);
